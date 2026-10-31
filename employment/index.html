@@ -1,0 +1,211 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Employment | Explore Careers Today - Join Our Team</title>
+  <meta name="description" content="Join a growing New Mexico company where hospitality, creativity, and leadership come together. Apply to work with FiveM Group.">
+  <link rel="canonical" href="https://www.fivem.group/employment">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+  <link rel="preload" href="/assets/fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+  <script src="/assets/apply.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="/" aria-label="FiveM.Group home">
+      <img src="/assets/fivem-logo-header.png" alt="FiveM.Group" width="1416" height="219">
+    </a>
+    <nav aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/employment" aria-current="page">Employment</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <img class="jobs-photo" src="/assets/hero.webp" alt="" width="2500" height="1667">
+
+    <section class="jobs-intro">
+      <h1>Build your future with FiveM Group</h1>
+      <p>Join a growing New Mexico company where hospitality, creativity, and leadership come together.</p>
+      <p class="motto">People, creativity, community.</p>
+      <p>FiveM Group is proud to be an equal opportunity employer. We celebrate diversity and are committed to creating an inclusive environment for all team members. We offer weekly pay, food and affiliate discounts, opportunities for growth and advancement, and the ability to work across multiple locations and restaurant concepts within our portfolio. Whether you are starting your career or looking to take the next step, FiveM Group provides a supportive environment where hard work, reliability, and leadership are recognized and rewarded.</p>
+    </section>
+
+    <section class="apply" aria-labelledby="apply-heading">
+      <div class="apply-intro">
+        <h2 id="apply-heading">Employment</h2>
+        <p>Tell us a little about yourself. We look forward to learning more.</p>
+      </div>
+
+      <form class="apply-form" method="post" action="/api/apply" enctype="multipart/form-data">
+        <fieldset class="field">
+          <legend>Name</legend>
+          <div class="name-row">
+            <div>
+              <label class="sub-label" for="first-name">First Name <span class="req">(required)</span></label>
+              <input id="first-name" name="firstName" type="text" autocomplete="given-name" required>
+            </div>
+            <div>
+              <label class="sub-label" for="last-name">Last Name <span class="req">(required)</span></label>
+              <input id="last-name" name="lastName" type="text" autocomplete="family-name" required>
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label class="label" for="email">Email <span class="req">(required)</span></label>
+          <input id="email" name="email" type="email" autocomplete="email" required>
+        </div>
+
+        <div class="field">
+          <label class="label" for="phone">Phone <span class="req">(required)</span></label>
+          <input id="phone" name="phone" type="tel" autocomplete="tel" required>
+        </div>
+
+        <fieldset class="field">
+          <legend>What position are you looking for? <span class="req">(required)</span></legend>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="position" value="Back Of House (cook, prep, dish, bake, etc.)"><span>Back Of House (cook, prep, dish, bake, etc.)</span></label>
+            <label class="check"><input type="checkbox" name="position" value="Front Of House (cashier, bartender, server, host, buss, runner, etc.)"><span>Front Of House (cashier, bartender, server, host, buss, runner, etc.)</span></label>
+            <label class="check"><input type="checkbox" name="position" value="Administration (marketing, accounting, design, programming, etc)"><span>Administration (marketing, accounting, design, programming, etc)</span></label>
+            <label class="check"><input type="checkbox" name="position" value="Leadership (supervisor, trainer, manager, etc.)"><span>Leadership (supervisor, trainer, manager, etc.)</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Availability <span class="req">(required)</span></legend>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="availability" value="Weekday mornings"><span>Weekday mornings</span></label>
+            <label class="check"><input type="checkbox" name="availability" value="Weekday afternoons / evenings"><span>Weekday afternoons / evenings</span></label>
+            <label class="check"><input type="checkbox" name="availability" value="Weekend mornings"><span>Weekend mornings</span></label>
+            <label class="check"><input type="checkbox" name="availability" value="Weekend afternoons / evenings"><span>Weekend afternoons / evenings</span></label>
+            <label class="check"><input type="checkbox" name="availability" value="Open availability"><span>Open availability</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Hours you are looking for <span class="req">(required)</span></legend>
+          <div class="checks">
+            <label class="check"><input type="radio" name="hours" value="Full-time" required><span>Full-time</span></label>
+            <label class="check"><input type="radio" name="hours" value="Part-time" required><span>Part-time</span></label>
+            <label class="check"><input type="radio" name="hours" value="Either" required><span>Either</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Timeline <span class="req">(required)</span></legend>
+          <div class="checks">
+            <label class="check"><input type="checkbox" name="timeline" value="ASAP"><span>ASAP</span></label>
+            <label class="check"><input type="checkbox" name="timeline" value="Within 2-4 weeks"><span>Within 2-4 weeks</span></label>
+            <label class="check"><input type="checkbox" name="timeline" value="Within 1-2 months"><span>Within 1-2 months</span></label>
+            <label class="check"><input type="checkbox" name="timeline" value="Open to needs"><span>Open to needs</span></label>
+          </div>
+        </fieldset>
+
+        <fieldset class="field">
+          <legend>Are you legally eligible to work in the United States? <span class="req">(required)</span></legend>
+          <div class="checks checks-row">
+            <label class="check"><input type="radio" name="workEligible" value="Yes" required><span>Yes</span></label>
+            <label class="check"><input type="radio" name="workEligible" value="No" required><span>No</span></label>
+          </div>
+        </fieldset>
+
+        <label class="check">
+          <input type="checkbox" name="alcoholEligible" value="Yes">
+          <span>I am 21 or older and eligible to take an alcohol servers class for positions that might require it.</span>
+        </label>
+
+        <div class="field">
+          <label class="label" for="experience">Years of experience in restaurants or hospitality</label>
+          <select id="experience" name="experience">
+            <option value="">Select one</option>
+              <option>No experience yet</option>
+              <option>Less than 1 year</option>
+              <option>1-2 years</option>
+              <option>3-5 years</option>
+              <option>More than 5 years</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <label class="label" for="recent-job">Most recent employer and role</label>
+          <input id="recent-job" name="recentJob" type="text" autocomplete="organization-title">
+        </div>
+
+        <div class="field">
+          <label class="label" for="details">Additional details about your experiences, goals, and expectations. <span class="req">(required)</span></label>
+          <textarea id="details" name="details" rows="4" required></textarea>
+        </div>
+
+        <fieldset class="field">
+          <legend>References <span class="opt">(optional)</span></legend>
+          <div class="ref-grid">
+            <div>
+              <label class="sub-label" for="ref1-name">Reference 1 name</label>
+              <input id="ref1-name" name="ref1Name" type="text">
+            </div>
+            <div>
+              <label class="sub-label" for="ref1-contact">Phone or email</label>
+              <input id="ref1-contact" name="ref1Contact" type="text">
+            </div>
+            <div>
+              <label class="sub-label" for="ref2-name">Reference 2 name</label>
+              <input id="ref2-name" name="ref2Name" type="text">
+            </div>
+            <div>
+              <label class="sub-label" for="ref2-contact">Phone or email</label>
+              <input id="ref2-contact" name="ref2Contact" type="text">
+            </div>
+          </div>
+        </fieldset>
+
+        <div class="field">
+          <label class="label" for="heard">How did you hear about us?</label>
+          <select id="heard" name="heard">
+            <option value="">Select one</option>
+              <option>Referral from a team member or friend</option>
+              <option>Indeed or another job board</option>
+              <option>Social media</option>
+              <option>Walked in / saw a sign</option>
+              <option>Other</option>
+          </select>
+        </div>
+
+        <div class="field">
+          <span class="label" id="resume-label">Upload a Resume</span>
+          <label class="upload">
+            <input type="file" name="resume" accept=".pdf,.doc,.docx,.rtf,.txt" aria-labelledby="resume-label">
+            <span class="plus" aria-hidden="true">+</span>
+            <span class="upload-name">Add a File</span>
+          </label>
+        </div>
+
+        <label class="check sms">
+          <input type="checkbox" name="smsConsent" value="Yes">
+          <span>It is okay to text me about my application at the phone number above. Message and data rates may apply.</span>
+        </label>
+
+        <div class="hp" aria-hidden="true">
+          <label>Leave this field empty <input type="text" name="company_website" tabindex="-1" autocomplete="off"></label>
+        </div>
+
+        <button class="btn" type="submit">Submit</button>
+        <p class="form-status" role="status" aria-live="polite"></p>
+      </form>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">FiveM Group</p>
+    <address>
+      FiveM Companies LLC<br>
+      PO Box 2615<br>
+      Tijeras, NM 87059
+    </address>
+  </footer>
+</body>
+</html>
