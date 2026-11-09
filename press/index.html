@@ -9,7 +9,9 @@
   <link rel="icon" type="image/png" href="/assets/favicon.png">
   <link rel="preload" href="/assets/fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="/assets/fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="/styles.css">
+  <link rel="stylesheet" href="/styles.css?v=2">
+  <script>document.documentElement.classList.add("js")</script>
+  <script src="/assets/nav.js" defer></script>
 </head>
 <body>
   <a class="skip" href="#main">Skip to content</a>
@@ -18,14 +20,21 @@
     <a class="logo" href="/" aria-label="FiveM.Group home">
       <img src="/assets/fivem-logo-header.png" alt="FiveM.Group" width="1416" height="219">
     </a>
-    <nav aria-label="Main">
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+      <span class="nav-toggle-label">Menu</span>
+      <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true" focusable="false"><path d="M3 6h18M3 12h18M3 18h18" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+    </button>
+    <nav id="site-nav" aria-label="Main">
       <a href="/">Home</a>
       <a href="/employment">Employment</a>
       <a href="/press/" aria-current="page">Press</a>
     </nav>
   </header>
 
-  <main id="main" class="press">
+  <main id="main">
+    <img class="jobs-photo" src="/assets/hero.webp" alt="" width="2500" height="1667">
+
+    <div class="press">
     <h1>News from FiveM Group</h1>
     <p class="press-sub">Announcements from FiveM Group, Primera Agua Hospitality, and Manzer Agency.</p>
 
@@ -42,6 +51,7 @@
       <h2>Media contact</h2>
       <p><a class="text-link" href="mailto:hello@fivem.group">hello@fivem.group</a></p>
     </section>
+    </div>
   </main>
 
   <footer class="site-footer">
