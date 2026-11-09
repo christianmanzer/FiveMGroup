@@ -1,0 +1,136 @@
+<!doctype html>
+<!--
+  PRESS RELEASE TEMPLATE
+  1. Copy this file to press/YYYY-MM-short-name/index.html and put the photos in the same folder.
+  2. Replace every {{TOKEN}} below, then delete this comment.
+  3. Add the release to press/index.html (newest first) and to sitemap.xml.
+  Tokens: TITLE, SUMMARY, SLUG, DATE_ISO (2026-11-09), DATE_LONG (November 9, 2026), SUBHEAD,
+          CITY (Tijeras, N.M.), BODY (paragraphs), PHOTO_1/PHOTO_2 and captions, QUOTE.
+-->
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{TITLE}} | FiveM.Group Press</title>
+  <meta name="description" content="{{SUMMARY}}">
+  <meta name="robots" content="noindex"><!-- delete this line in a real release -->
+  <link rel="canonical" href="https://www.fivem.group/press/{{SLUG}}/">
+  <link rel="icon" type="image/png" href="/assets/favicon.png">
+
+  <meta property="og:type" content="article">
+  <meta property="og:site_name" content="FiveM.Group">
+  <meta property="og:title" content="{{TITLE}}">
+  <meta property="og:description" content="{{SUMMARY}}">
+  <meta property="og:url" content="https://www.fivem.group/press/{{SLUG}}/">
+  <meta property="og:image" content="https://www.fivem.group/press/{{SLUG}}/{{PHOTO_1}}">
+  <meta property="og:image:alt" content="{{PHOTO_1_ALT}}">
+  <meta property="article:published_time" content="{{DATE_ISO}}">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="{{TITLE}}">
+  <meta name="twitter:description" content="{{SUMMARY}}">
+  <meta name="twitter:image" content="https://www.fivem.group/press/{{SLUG}}/{{PHOTO_1}}">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "NewsArticle",
+    "headline": "{{TITLE}}",
+    "datePublished": "{{DATE_ISO}}",
+    "description": "{{SUMMARY}}",
+    "image": "https://www.fivem.group/press/{{SLUG}}/{{PHOTO_1}}",
+    "mainEntityOfPage": "https://www.fivem.group/press/{{SLUG}}/",
+    "author": { "@type": "Organization", "name": "FiveM Group" },
+    "publisher": { "@type": "Organization", "name": "FiveM Group", "url": "https://www.fivem.group/" }
+  }
+  </script>
+
+  <link rel="preload" href="/assets/fonts/poppins-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/assets/fonts/poppins-latin-700-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <a class="logo" href="/" aria-label="FiveM.Group home">
+      <img src="/assets/fivem-logo-header.png" alt="FiveM.Group" width="1416" height="219">
+    </a>
+    <nav aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/employment">Employment</a>
+      <a href="/press/" aria-current="page">Press</a>
+    </nav>
+  </header>
+
+  <main id="main" class="press">
+    <article>
+      <p class="press-kicker">Press release</p>
+      <h1>{{TITLE}}</h1>
+      <p class="press-sub">{{SUBHEAD}}</p>
+      <p class="press-meta">For immediate release &middot; <time datetime="{{DATE_ISO}}">{{DATE_LONG}}</time> &middot; Media contact: Christian Manzer, <a class="text-link" href="mailto:hello@fivem.group">hello@fivem.group</a></p>
+
+      <div class="press-body">
+        <p><span class="dateline">{{CITY}} &mdash;</span> {{FIRST_PARAGRAPH}}</p>
+        {{BODY}}
+        <blockquote>
+          <p>&ldquo;{{QUOTE}}&rdquo;</p>
+          <cite>{{QUOTE_NAME}}, {{QUOTE_TITLE}}</cite>
+        </blockquote>
+      </div>
+
+      <p class="press-end" aria-hidden="true">###</p>
+
+      <section class="press-section">
+        <h2>About FiveM Group</h2>
+        <p>FiveM Group is a New Mexico hospitality and business company building long-term brands and opportunities for local communities. Its restaurant portfolio operates through Primera Agua Hospitality, which also includes No Competition: Supercharged Bistro in Corrales.</p>
+      </section>
+
+      <section class="press-section">
+        <h2>Photos</h2>
+        <div class="press-photos">
+          <figure>
+            <img src="{{PHOTO_1}}" alt="{{PHOTO_1_ALT}}" loading="lazy">
+            <figcaption>{{PHOTO_1_CAPTION}} Photo: Manzer Agency LLC. <a class="text-link" href="{{PHOTO_1}}" download>Download</a></figcaption>
+          </figure>
+          <figure>
+            <img src="{{PHOTO_2}}" alt="{{PHOTO_2_ALT}}" loading="lazy">
+            <figcaption>{{PHOTO_2_CAPTION}} Photo: Manzer Agency LLC. <a class="text-link" href="{{PHOTO_2}}" download>Download</a></figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <section class="press-section">
+        <h2>Share this announcement</h2>
+        <p class="press-share" id="share-text">{{SHARE_TEXT}}</p>
+        <button class="btn press-copy" type="button" data-copy="share-text">Copy text</button>
+      </section>
+
+      <section class="press-section">
+        <h2>Media contact</h2>
+        <p>Christian Manzer<br>FiveM Group<br><a class="text-link" href="mailto:hello@fivem.group">hello@fivem.group</a></p>
+        <!-- Optional PDF copy: <p><a class="btn" href="{{SLUG}}.pdf" download>Download PDF</a></p> -->
+      </section>
+    </article>
+
+    <a class="text-link press-back" href="/press/">&larr; All press releases</a>
+  </main>
+
+  <footer class="site-footer">
+    <p class="footer-name">FiveM Group</p>
+    <address>
+      FiveM Companies LLC<br>
+      PO Box 2615<br>
+      Tijeras, NM 87059
+    </address>
+  </footer>
+  <script>
+    document.querySelectorAll("[data-copy]").forEach(function (btn) {
+      btn.addEventListener("click", function () {
+        var text = document.getElementById(btn.dataset.copy).textContent.trim();
+        var done = function () { btn.textContent = "Copied"; setTimeout(function () { btn.textContent = "Copy text"; }, 2000); };
+        if (navigator.clipboard) { navigator.clipboard.writeText(text).then(done, function () {}); }
+      });
+    });
+  </script>
+</body>
+</html>

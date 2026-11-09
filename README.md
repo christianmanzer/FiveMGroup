@@ -30,3 +30,13 @@ Applications are sent from your own Microsoft 365 mailbox through Microsoft Grap
 7. Redeploy, then submit a test application with a resume.
 
 Resumes are limited to 3 MB (PDF or Word). If Microsoft rejects an attachment, the application is still emailed with a note saying the resume needs to be requested. Until step 6 is done, the form shows a message asking people to email hello@fivem.group.
+
+## Adding a press release
+
+Press releases live at `fivem.group/press/`. Each one is its own page.
+
+1. Copy `templates/press-release.html` to `press/YYYY-MM-short-name/index.html`.
+2. Put the release's photos in that same folder.
+3. Replace every `{{TOKEN}}` in the new page and remove the template comment and the `noindex` line.
+4. Add the release to `press/index.html` (newest first) and to `sitemap.xml`.
+5. Commit to GitHub; Cloudflare redeploys automatically. Never delete an old release, so links keep working.
